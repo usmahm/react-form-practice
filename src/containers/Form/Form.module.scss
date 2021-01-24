@@ -1,0 +1,31 @@
+.form {
+  margin: 0 auto;
+  width: 80%;
+  max-width: 25rem;
+  text-align: center;
+
+  h1 {
+    margin: 20px 0;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    button {
+      padding: 6px 15px;
+      margin: 0 auto;
+      background-color: blue;
+      color: white;
+      border: none;
+
+      &:disabled {
+        background-color: #ccc;
+        opacity: 0.7;
+        cursor: not-allowed;
+      }
+    }
+  }
+}

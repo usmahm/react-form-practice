@@ -1,0 +1,43 @@
+label {
+  width: 100%;
+  margin-bottom: 20px;
+  position: relative;
+
+  .input {
+    padding-left: 10px;
+    height: 2rem;
+    width: 100%;
+    border: 1px solid black;
+    transition: all .2s;
+    background-color: white;
+
+
+    &:focus,
+    &:active {
+      background-color: aliceblue;
+      outline: none;
+      border: 1px solid blue;
+    }
+
+    &.invalid {
+      border: 1px solid red;
+      background-color: #fda49a;    
+    }
+  }
+
+  .errorMessage {
+    position: absolute;
+    z-index: -100;
+    right: 0;
+    color: red;
+    font-weight: 600;
+    font-size: 0.6rem;
+    bottom: 0;
+    transition: transform 1s ease;
+
+    &.show {
+      transform: translateY(12px);
+    }
+  }
+
+}
